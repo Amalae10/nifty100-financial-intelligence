@@ -1,0 +1,10 @@
+rule_id,table,severity
+DQ-05,profitandloss,WARNING
+DQ-06,profitandloss,WARNING
+DQ-09,cashflow,WARNING
+DQ-11,profitandloss,WARNING
+DQ-12,profitandloss,WARNING
+DQ-14,profitandloss,WARNING
+DQ-16,profitandloss,WARNING
+DQ-16,balancesheet,WARNING
+DQ-16,cashflow,WARNING
