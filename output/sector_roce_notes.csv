@@ -1,0 +1,24 @@
+company_id,year,return_on_capital_pct,broad_sector,source_roce,year_num,sector_roce_median,roce_difference,sector_roce_status,source_difference,source_anomaly,note
+AXISBANK,TTM,,Financials,7.06,,,,Insufficient Data,,OK,Within tolerance
+BAJAJFINSV,TTM,,Financials,21.14,,,,Insufficient Data,,OK,Within tolerance
+BAJAJHLDNG,TTM,,Financials,13.1,,,,Insufficient Data,,OK,Within tolerance
+BAJFINANCE,TTM,,Financials,11.9,,,,Insufficient Data,,OK,Within tolerance
+BANKBARODA,TTM,,Financials,6.33,,,,Insufficient Data,,OK,Within tolerance
+CANBK,TTM,,Financials,6.63,,,,Insufficient Data,,OK,Within tolerance
+CHOLAFIN,TTM,,Financials,10.4,,,,Insufficient Data,,OK,Within tolerance
+HDFCBANK,TTM,,Financials,7.67,,,,Insufficient Data,,OK,Within tolerance
+HDFCLIFE,TTM,,Financials,6.61,,,,Insufficient Data,,OK,Within tolerance
+ICICIBANK,TTM,,Financials,7.6,,,,Insufficient Data,,OK,Within tolerance
+ICICIGI,TTM,,Financials,22.5,,,,Insufficient Data,,OK,Within tolerance
+ICICIPRULI,TTM,,Financials,8.75,,,,Insufficient Data,,OK,Within tolerance
+INDUSINDBK,TTM,,Financials,7.93,,,,Insufficient Data,,OK,Within tolerance
+IRFC,TTM,,Financials,5.73,,,,Insufficient Data,,OK,Within tolerance
+JIOFIN,TTM,,Financials,2.16,,,,Insufficient Data,,OK,Within tolerance
+KOTAKBANK,TTM,,Financials,7.86,,,,Insufficient Data,,OK,Within tolerance
+LICI,TTM,,Financials,63.79,,,,Insufficient Data,,OK,Within tolerance
+PFC,TTM,,Financials,9.96,,,,Insufficient Data,,OK,Within tolerance
+PNB,TTM,,Financials,1.63,,,,Insufficient Data,,OK,Within tolerance
+RECLTD,TTM,,Financials,10.0,,,,Insufficient Data,,OK,Within tolerance
+SBILIFE,TTM,,Financials,13.2,,,,Insufficient Data,,OK,Within tolerance
+SBIN,TTM,,Financials,6.16,,,,Insufficient Data,,OK,Within tolerance
+SHRIRAMFIN,TTM,,Financials,11.3,,,,Insufficient Data,,OK,Within tolerance

@@ -1,43 +1,927 @@
-company_id,year,source_roe,computed_roe,roe_diff,source_roce,computed_roce,roce_diff,category
-ADANIENT,Mar 2024,13.64,8.534650424813185,5.105349575186816,11.6,11.996819496867396,0.3968194968673959,version difference
-ADANIGREEN,Mar 2024,14.7,12.812690665039659,1.8873093349603405,96.5,11.487173994537567,85.01282600546243,data source issue
-ADANIPOWER,Mar 2024,57.1,48.27674122146251,8.823258778537493,32.2,36.15051246768946,3.9505124676894567,version difference
-AMBUJACEM,Mar 2024,9.24,11.428984947896565,2.1889849478965644,12.8,18.505515359981022,5.705515359981021,version difference
-BAJAJFINSV,Mar 2024,11.72,25.850351412279537,14.130351412279536,21.14,11.705286304511525,9.434713695488476,formula discrepancy
-BAJFINANCE,Mar 2024,22.1,18.841921351830603,3.2580786481693984,11.9,4.360315856037963,7.539684143962037,version difference
-BEL,Mar 2024,26.3,4744.047619047619,4717.747619047619,34.6,4504.72440944882,4470.124409448819,data source issue
-BHARTIARTL,Mar 2024,14.9,10.35839213740181,4.541607862598191,13.1,25.104372407456466,12.004372407456467,version difference
-BOSCHLTD,Mar 2024,16.0,20.639920424403183,4.639920424403183,20.6,30.2486986697513,9.648698669751298,version difference
-BPCL,Mar 2024,41.9,35.511337343822305,6.388662656177694,32.1,36.17642090391142,4.076420903911419,version difference
-BRITANNIA,Mar 2024,57.1,54.14869322506978,2.9513067749302238,48.9,56.24375624375625,7.343756243756253,version difference
-CHOLAFIN,Mar 2024,20.2,17.455213596692694,2.7447864033073053,10.4,3.5107874445050236,6.889212555494977,version difference
-CIPLA,Mar 2024,16.8,15.554557028383135,1.2454429716168658,22.8,71.54593801577114,48.745938015771145,version difference
-COALINDIA,Mar 2024,52.0,45.16982956605826,6.830170433941738,63.6,105.75106719101879,42.15106719101879,formula discrepancy
-GODREJCP,Mar 2024,6.77,-4.45308779171297,11.22308779171297,26.49,4.7281921618204805,21.761807838179518,formula discrepancy
-HAL,Mar 2024,28.9,3816.5829145728644,3787.6829145728643,38.9,3617.391304347826,3578.491304347826,data source issue
-HCLTECH,Mar 2024,23.3,23.01393141233172,0.28606858766828225,29.6,34.71042001594142,5.110420015941422,version difference
-HDFCLIFE,Mar 2024,11.4,10.732306013909723,0.6676939860902777,6.61,646.4651639344262,639.8551639344262,data source issue
-HEROMOTOCO,Mar 2024,22.0,21.14243742584327,0.8575625741567308,29.1,177.91860147500682,148.81860147500683,data source issue
-HINDALCO,Mar 2024,10.2,9.567011474761177,0.6329885252388223,11.3,118.21454505175322,106.91454505175322,data source issue
-HINDUNILVR,Mar 2024,20.2,20.074973642078955,0.125026357921044,27.2,89.67591362756632,62.475913627566314,data source issue
-ICICIGI,Mar 2024,17.0,15.7230643179025,1.2769356820975002,22.5,146.4297385620915,123.9297385620915,data source issue
-ICICIPRULI,Mar 2024,8.07,7.732848705134029,0.3371512948659712,8.75,754.8873412535846,746.1373412535846,data source issue
-INDIGO,Mar 2024,,892.568306010929,,24.5,5643.454935622318,5618.954935622318,data source issue
-IRCTC,Mar 2024,40.4,34.39628482972136,6.003715170278639,53.8,47.78115501519757,6.018844984802428,formula discrepancy
-LICI,Mar 2024,63.61,49.44710986501021,14.162890134989787,63.79,57.534412123702374,6.255587876297625,formula discrepancy
-LT,Mar 2024,10.49,77.66510140873214,67.17510140873215,17.18,152.61895060890035,135.43895060890034,data source issue
-M&M,Mar 2024,17.99,18.537543435564285,0.5475434355642861,26.98,16.123589400412953,10.856410599587047,version difference
-MOTHERSON,Mar 2024,11.8,11.546549416937488,0.2534505830625129,13.7,20.535191093170127,6.835191093170128,version difference
-NESTLEIND,Mar 2024,135.61,117.75449101796407,17.855508982035943,185.43,162.06241519674356,23.36758480325645,formula discrepancy
-PFC,Mar 2024,19.49,26.1609340860332,6.670934086033203,9.96,3.493066198183381,6.466933801816619,formula discrepancy
-PNB,Mar 2024,8.7,61.320565191187306,52.62056519118731,1.63,,,data source issue
-POWERGRID,Mar 2024,19.0,17.870011245496066,1.129988754503934,13.2,19.16909551793869,5.96909551793869,version difference
-SHREECEM,Mar 2024,12.2,8.370767521615225,3.8292324783847747,14.8,22.876693948745473,8.076693948745472,version difference
-SHRIRAMFIN,Mar 2024,15.9,15.116350338120824,0.783649661879176,11.3,4.315116407506045,6.984883592493956,version difference
-TATAMOTORS,Mar 2024,49.4,37.45613415294755,11.94386584705245,20.1,33.93225101467374,13.832251014673737,formula discrepancy
-TATAPOWER,Mar 2024,11.3,13.227840276919272,1.9278402769192713,11.1,16.44604567377535,5.346045673775352,version difference
-TATASTEEL,Mar 2024,6.55,-5.334926929972293,11.884926929972293,7.02,9.068374302829994,2.0483743028299948,version difference
-TCS,Mar 2024,0.52,50.944313673485176,50.42431367348517,64.3,68.78489493452442,4.484894934524419,data source issue
-TECHM,Mar 2024,8.63,8.987963553189097,0.3579635531890961,11.9,18.60234198452373,6.702341984523729,version difference
-TORNTPHARM,Mar 2024,24.2,24.154025670945156,0.04597432905484311,23.2,32.3037323037323,9.103732303732304,version difference
-TRENT,Mar 2024,27.2,36.30776794493609,9.10776794493609,23.8,50.85036935234496,27.050369352344962,formula discrepancy
+CAGR | ABB | Mar 2019 | fcf_cagr_5yr_flag=ZERO_BASE
+CAGR | ABB | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ABB | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | ABB | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ABB | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIENSOL | Mar 2019 | fcf_cagr_5yr_flag=ZERO_BASE
+CAGR | ADANIENSOL | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIENSOL | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | ADANIENSOL | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIENSOL | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIENT | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIENT | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIENT | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | ADANIENT | Mar 2022 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIENT | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIENT | Mar 2024 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | ADANIGREEN | Mar 2022 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIGREEN | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPORTS | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIPORTS | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIPORTS | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPORTS | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | ADANIPOWER | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | AMBUJACEM | Dec 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | AMBUJACEM | Mar 2024 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | APOLLOHOSP | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | APOLLOHOSP | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | APOLLOHOSP | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | APOLLOHOSP | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | AXISBANK | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | AXISBANK | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | AXISBANK | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | AXISBANK | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | AXISBANK | Mar 2024 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BAJAJ-AUTO | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | BAJAJFINSV | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJAJFINSV | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJAJFINSV | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJAJFINSV | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | BAJAJFINSV | Mar 2022 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJAJFINSV | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJAJFINSV | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJAJHLDNG | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BAJAJHLDNG | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | BAJFINANCE | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJFINANCE | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJFINANCE | Mar 2022 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJFINANCE | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BAJFINANCE | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BANKBARODA | Mar 2018 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BANKBARODA | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BANKBARODA | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BANKBARODA | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BANKBARODA | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BEL | Mar 2018 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BEL | Mar 2022 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BEL | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | BEL | Mar 2024 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHARTIARTL | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHARTIARTL | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHARTIARTL | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | BHARTIARTL | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | BHEL | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2022 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BHEL | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | BPCL | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BPCL | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BPCL | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | BPCL | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | BRITANNIA | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2018 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2022 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CHOLAFIN | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CHOLAFIN | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CHOLAFIN | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CHOLAFIN | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CHOLAFIN | Mar 2022 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CHOLAFIN | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CHOLAFIN | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CIPLA | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | CIPLA | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | DIVISLAB | Mar 2022 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | DIVISLAB | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | DLF | Mar 2018 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | DLF | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | DLF | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | DMART | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | DMART | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | DMART | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | DMART | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | DMART | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | DMART | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | DRREDDY | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | EICHERMOT | Mar 2017 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | EICHERMOT | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | EICHERMOT | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | EICHERMOT | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | GAIL | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | GAIL | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | GODREJCP | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | GODREJCP | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | GODREJCP | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | GODREJCP | Mar 2024 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | GRASIM | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | GRASIM | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | GRASIM | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | GRASIM | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | HAL | Mar 2022 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | HAL | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | HAL | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | HAVELLS | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | HDFCBANK | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | HDFCBANK | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | HDFCBANK | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | HDFCBANK | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | HDFCBANK | Mar 2022 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | HDFCBANK | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | HDFCLIFE | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | HDFCLIFE | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | HDFCLIFE | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | HINDALCO | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | HINDALCO | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | HINDALCO | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | ICICIBANK | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ICICIBANK | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ICICIBANK | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ICICIBANK | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ICICIGI | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ICICIGI | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ICICIPRULI | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ICICIPRULI | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ICICIPRULI | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | INDIGO | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | INDIGO | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | INDUSINDBK | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | INDUSINDBK | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | INDUSINDBK | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | INDUSINDBK | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | INDUSINDBK | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | INDUSINDBK | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | INFY | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | IOC | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | IOC | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | IOC | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | IRCTC | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | IRFC | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | IRFC | Mar 2022 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | IRFC | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | IRFC | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2024 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JSWENERGY | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JSWENERGY | Mar 2024 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JSWSTEEL | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | JSWSTEEL | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JSWSTEEL | Mar 2024 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | KOTAKBANK | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | KOTAKBANK | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | KOTAKBANK | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | KOTAKBANK | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | KOTAKBANK | Mar 2022 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | KOTAKBANK | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | KOTAKBANK | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | LODHA | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | LODHA | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | LT | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | LT | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | LT | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | LT | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | LT | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | LT | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | LT | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | M&M | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | M&M | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | M&M | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | M&M | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | M&M | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | M&M | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | M&M | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | MARUTI | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | MOTHERSON | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | NAUKRI | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | NAUKRI | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | NAUKRI | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | NAUKRI | Mar 2022 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | NAUKRI | Mar 2024 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | NTPC | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | NTPC | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | NTPC | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | NTPC | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | NTPC | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | NTPC | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ONGC | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ONGC | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | ONGC | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | PFC | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | PFC | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | PFC | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | PFC | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | PFC | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | PFC | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | PIDILITIND | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | PIDILITIND | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | PNB | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | PNB | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | PNB | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | POWERGRID | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | POWERGRID | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | POWERGRID | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | POWERGRID | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | POWERGRID | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | POWERGRID | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | RECLTD | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | RECLTD | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | RECLTD | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | RECLTD | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | RECLTD | Mar 2022 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | RECLTD | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | RECLTD | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | RELIANCE | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | RELIANCE | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | RELIANCE | Mar 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | RELIANCE | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | RELIANCE | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | SBILIFE | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SBILIFE | Mar 2021 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | SBILIFE | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | SBILIFE | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | SBILIFE | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SBIN | Mar 2018 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | SBIN | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SHREECEM | Mar 2018 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | SHREECEM | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | SHREECEM | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | SHRIRAMFIN | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SHRIRAMFIN | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SHRIRAMFIN | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SHRIRAMFIN | Mar 2021 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SHRIRAMFIN | Mar 2022 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SHRIRAMFIN | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SHRIRAMFIN | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | SIEMENS | Sep 2021 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | SIEMENS | Sep 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | SUNPHARMA | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | TATAMOTORS | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | TATAMOTORS | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TATAMOTORS | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TATAMOTORS | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TATAPOWER | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TATAPOWER | Mar 2022 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TATAPOWER | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATASTEEL | Mar 2018 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATASTEEL | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | TATASTEEL | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TITAN | Mar 2019 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TITAN | Mar 2020 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TITAN | Mar 2023 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TORNTPHARM | Mar 2018 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | TORNTPHARM | Mar 2020 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TORNTPHARM | Mar 2023 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2018 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2019 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | TRENT | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | TRENT | Mar 2024 | fcf_cagr_5yr_flag=TURNAROUND
+CAGR | TVSMOTOR | Mar 2018 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TVSMOTOR | Mar 2019 | fcf_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TVSMOTOR | Mar 2020 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | TVSMOTOR | Mar 2022 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | TVSMOTOR | Mar 2023 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | TVSMOTOR | Mar 2024 | fcf_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIENSOL | Mar 2017 | revenue_cagr_3yr_flag=ZERO_BASE
+CAGR | ADANIENSOL | Mar 2019 | revenue_cagr_5yr_flag=ZERO_BASE
+CAGR | ADANIENSOL | Mar 2024 | revenue_cagr_10yr_flag=ZERO_BASE
+CAGR | ADANIENSOL | Mar 2017 | pat_cagr_3yr_flag=ZERO_BASE
+CAGR | ADANIENSOL | Mar 2018 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2020 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | ADANIGREEN | Mar 2021 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2022 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2016 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2017 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2018 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2019 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | ADANIPOWER | Mar 2020 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2021 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2022 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | BANKBARODA | Mar 2016 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BANKBARODA | Mar 2018 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BANKBARODA | Mar 2019 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | BANKBARODA | Mar 2021 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | BHARTIARTL | Mar 2020 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHARTIARTL | Mar 2021 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHARTIARTL | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | BHARTIARTL | Mar 2024 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | BHEL | Mar 2016 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2019 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | BHEL | Mar 2020 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2021 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | BHEL | Mar 2024 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | CANBK | Mar 2016 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2018 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2019 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | CANBK | Mar 2020 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2021 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | CANBK | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | DLF | Mar 2020 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | DLF | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | GODREJCP | Mar 2024 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | HINDALCO | Mar 2016 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | HINDALCO | Mar 2019 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | INDIGO | Mar 2020 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2021 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2022 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2023 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | INDIGO | Mar 2024 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | IOC | Mar 2020 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | IOC | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2016 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2017 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2018 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | JINDALSTEL | Mar 2019 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | JINDALSTEL | Mar 2020 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | JINDALSTEL | Mar 2021 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2022 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | JSWSTEEL | Mar 2016 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | JSWSTEEL | Mar 2019 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | M&M | Mar 2020 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | M&M | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | NAUKRI | Mar 2017 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | NAUKRI | Mar 2018 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | NAUKRI | Mar 2020 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | NAUKRI | Mar 2023 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | PNB | Mar 2016 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2018 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2019 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | PNB | Mar 2021 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | PNB | Mar 2022 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | SBIN | Mar 2017 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | SBIN | Mar 2018 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | SBIN | Mar 2020 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | SBIN | Mar 2021 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | TATACONSUM | Mar 2016 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TATACONSUM | Mar 2019 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | TATAMOTORS | Mar 2019 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2020 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2021 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2022 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | TATAMOTORS | Mar 2023 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | TATAMOTORS | Mar 2024 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2016 | pat_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | TATASTEEL | Mar 2017 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TATASTEEL | Mar 2018 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2019 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2020 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2024 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TRENT | Mar 2016 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2017 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2021 | pat_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TRENT | Mar 2024 | pat_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIENSOL | Mar 2019 | pat_cagr_5yr_flag=ZERO_BASE
+CAGR | ADANIENSOL | Mar 2020 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2022 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2023 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2024 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2018 | pat_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2019 | pat_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2020 | pat_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2022 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2023 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2024 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | BANKBARODA | Mar 2018 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BANKBARODA | Mar 2021 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | BANKBARODA | Mar 2023 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | BHARTIARTL | Mar 2020 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHARTIARTL | Mar 2021 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2020 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2021 | pat_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CANBK | Mar 2018 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2020 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2021 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | CANBK | Mar 2023 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | DLF | Mar 2020 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | GODREJCP | Mar 2024 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | HINDALCO | Mar 2021 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | INDIGO | Mar 2020 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2021 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2022 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2023 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | IOC | Mar 2020 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2018 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2019 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2020 | pat_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | JINDALSTEL | Mar 2021 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2022 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2023 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2024 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | JSWSTEEL | Mar 2021 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | M&M | Mar 2020 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | NAUKRI | Mar 2020 | pat_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | NAUKRI | Mar 2022 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | NAUKRI | Mar 2023 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2018 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2019 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2021 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | PNB | Mar 2023 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | PNB | Mar 2024 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | SBIN | Mar 2018 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | SBIN | Mar 2022 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | SBIN | Mar 2023 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | TATACONSUM | Mar 2021 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | TATAMOTORS | Mar 2019 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2020 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2021 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2022 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2024 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2018 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2020 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2021 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2022 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2024 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TRENT | Mar 2018 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2019 | pat_cagr_5yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2021 | pat_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | ADANIENSOL | Mar 2024 | pat_cagr_10yr_flag=ZERO_BASE
+CAGR | ADANIPOWER | Mar 2023 | pat_cagr_10yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2024 | pat_cagr_10yr_flag=TURNAROUND
+CAGR | GODREJCP | Mar 2024 | pat_cagr_10yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2023 | pat_cagr_10yr_flag=DECLINE_TO_LOSS
+CAGR | NAUKRI | Mar 2023 | pat_cagr_10yr_flag=DECLINE_TO_LOSS
+CAGR | TATASTEEL | Mar 2023 | pat_cagr_10yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2024 | pat_cagr_10yr_flag=DECLINE_TO_LOSS
+CAGR | TRENT | Mar 2023 | pat_cagr_10yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2024 | pat_cagr_10yr_flag=TURNAROUND
+CAGR | ADANIENSOL | Mar 2017 | eps_cagr_3yr_flag=ZERO_BASE
+CAGR | ADANIENSOL | Mar 2018 | eps_cagr_3yr_flag=ZERO_BASE
+CAGR | ADANIGREEN | Mar 2020 | eps_cagr_3yr_flag=ZERO_BASE
+CAGR | ADANIGREEN | Mar 2021 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2022 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2023 | eps_cagr_3yr_flag=ZERO_BASE
+CAGR | ADANIPOWER | Mar 2016 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2017 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2018 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2019 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | ADANIPOWER | Mar 2020 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2021 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2022 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2023 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | BANKBARODA | Mar 2016 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BANKBARODA | Mar 2018 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BANKBARODA | Mar 2019 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | BANKBARODA | Mar 2021 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | BHARTIARTL | Mar 2020 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHARTIARTL | Mar 2021 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHARTIARTL | Mar 2023 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | BHARTIARTL | Mar 2024 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | BHEL | Mar 2016 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2019 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | BHEL | Mar 2020 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2021 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2023 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | BHEL | Mar 2024 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | CANBK | Mar 2016 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2018 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2019 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | CANBK | Mar 2020 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2021 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | CANBK | Mar 2023 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | DLF | Mar 2020 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | DLF | Mar 2023 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | GODREJCP | Mar 2024 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | HINDALCO | Mar 2016 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | HINDALCO | Mar 2019 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | INDIGO | Mar 2020 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2021 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2022 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2023 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | INDIGO | Mar 2024 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | IOC | Mar 2020 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | IOC | Mar 2023 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2016 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2017 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2018 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | JINDALSTEL | Mar 2019 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | JINDALSTEL | Mar 2020 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | JINDALSTEL | Mar 2021 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2022 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2023 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | JSWENERGY | Mar 2021 | eps_cagr_3yr_flag=ZERO_BASE
+CAGR | JSWSTEEL | Mar 2016 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | JSWSTEEL | Mar 2019 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | NAUKRI | Mar 2017 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | NAUKRI | Mar 2020 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | NAUKRI | Mar 2023 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | PNB | Mar 2016 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2018 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2019 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | PNB | Mar 2021 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | PNB | Mar 2022 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | SBIN | Mar 2018 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | SBIN | Mar 2020 | eps_cagr_3yr_flag=ZERO_BASE
+CAGR | SBIN | Mar 2021 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | TATACONSUM | Mar 2019 | eps_cagr_3yr_flag=ZERO_BASE
+CAGR | TATAMOTORS | Mar 2019 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2020 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2021 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2022 | eps_cagr_3yr_flag=BOTH_NEGATIVE
+CAGR | TATAMOTORS | Mar 2023 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | TATAMOTORS | Mar 2024 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | TATAPOWER | Mar 2016 | eps_cagr_3yr_flag=ZERO_BASE
+CAGR | TATAPOWER | Mar 2017 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2017 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TATASTEEL | Mar 2018 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2019 | eps_cagr_3yr_flag=ZERO_BASE
+CAGR | TATASTEEL | Mar 2020 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2024 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TRENT | Mar 2016 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2017 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2021 | eps_cagr_3yr_flag=DECLINE_TO_LOSS
+CAGR | TRENT | Mar 2024 | eps_cagr_3yr_flag=TURNAROUND
+CAGR | ADANIENSOL | Mar 2019 | eps_cagr_5yr_flag=ZERO_BASE
+CAGR | ADANIENSOL | Mar 2020 | eps_cagr_5yr_flag=ZERO_BASE
+CAGR | ADANIGREEN | Mar 2022 | eps_cagr_5yr_flag=ZERO_BASE
+CAGR | ADANIGREEN | Mar 2023 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIGREEN | Mar 2024 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2018 | eps_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2019 | eps_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2020 | eps_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | ADANIPOWER | Mar 2022 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2023 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2024 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | BANKBARODA | Mar 2018 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BANKBARODA | Mar 2021 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | BANKBARODA | Mar 2023 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | BHARTIARTL | Mar 2020 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHARTIARTL | Mar 2021 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2020 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | BHEL | Mar 2021 | eps_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | CANBK | Mar 2018 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2020 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | CANBK | Mar 2021 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | CANBK | Mar 2023 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | DLF | Mar 2020 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | GODREJCP | Mar 2024 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | HINDALCO | Mar 2021 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | INDIGO | Mar 2020 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2021 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2022 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2023 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | IOC | Mar 2020 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2018 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2019 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | JINDALSTEL | Mar 2020 | eps_cagr_5yr_flag=BOTH_NEGATIVE
+CAGR | JINDALSTEL | Mar 2021 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2022 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2023 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | JINDALSTEL | Mar 2024 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | JSWENERGY | Mar 2023 | eps_cagr_5yr_flag=ZERO_BASE
+CAGR | JSWSTEEL | Mar 2021 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | NAUKRI | Mar 2020 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | NAUKRI | Mar 2022 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | NAUKRI | Mar 2023 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2018 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2019 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | PNB | Mar 2021 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | PNB | Mar 2023 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | PNB | Mar 2024 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | SBIN | Mar 2018 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | SBIN | Mar 2022 | eps_cagr_5yr_flag=ZERO_BASE
+CAGR | SBIN | Mar 2023 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | TATACONSUM | Mar 2021 | eps_cagr_5yr_flag=ZERO_BASE
+CAGR | TATAMOTORS | Mar 2019 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2020 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2021 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2022 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TATAMOTORS | Mar 2024 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | TATAPOWER | Mar 2018 | eps_cagr_5yr_flag=ZERO_BASE
+CAGR | TATAPOWER | Mar 2019 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2018 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2020 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2021 | eps_cagr_5yr_flag=ZERO_BASE
+CAGR | TATASTEEL | Mar 2022 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2024 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | TRENT | Mar 2018 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2019 | eps_cagr_5yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2021 | eps_cagr_5yr_flag=DECLINE_TO_LOSS
+CAGR | ADANIENSOL | Mar 2024 | eps_cagr_10yr_flag=ZERO_BASE
+CAGR | ADANIPOWER | Mar 2023 | eps_cagr_10yr_flag=TURNAROUND
+CAGR | ADANIPOWER | Mar 2024 | eps_cagr_10yr_flag=TURNAROUND
+CAGR | GODREJCP | Mar 2024 | eps_cagr_10yr_flag=DECLINE_TO_LOSS
+CAGR | INDIGO | Mar 2023 | eps_cagr_10yr_flag=DECLINE_TO_LOSS
+CAGR | NAUKRI | Mar 2023 | eps_cagr_10yr_flag=DECLINE_TO_LOSS
+CAGR | TATAPOWER | Mar 2023 | eps_cagr_10yr_flag=ZERO_BASE
+CAGR | TATAPOWER | Mar 2024 | eps_cagr_10yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2023 | eps_cagr_10yr_flag=TURNAROUND
+CAGR | TATASTEEL | Mar 2024 | eps_cagr_10yr_flag=DECLINE_TO_LOSS
+CAGR | TRENT | Mar 2023 | eps_cagr_10yr_flag=TURNAROUND
+CAGR | TRENT | Mar 2024 | eps_cagr_10yr_flag=TURNAROUND
+DEBT_FREE | ABB | Dec 2012 | ICR=N/A
+DEBT_FREE | ABB | Mar 2014 | ICR=N/A
+DEBT_FREE | ABB | Mar 2015 | ICR=N/A
+DEBT_FREE | ADANIENSOL | Mar 2014 | ICR=N/A
+DEBT_FREE | BAJAJHLDNG | Mar 2013 | ICR=N/A
+DEBT_FREE | BAJAJHLDNG | Mar 2014 | ICR=N/A
+DEBT_FREE | BAJAJHLDNG | Mar 2015 | ICR=N/A
+DEBT_FREE | BAJAJHLDNG | Mar 2016 | ICR=N/A
+DEBT_FREE | BAJAJHLDNG | Mar 2017 | ICR=N/A
+DEBT_FREE | BAJAJHLDNG | Mar 2018 | ICR=N/A
+DEBT_FREE | BAJAJHLDNG | Mar 2019 | ICR=N/A
+DEBT_FREE | BOSCHLTD | Dec 2013 | ICR=N/A
+DEBT_FREE | CHOLAFIN | Mar 2015 | ICR=N/A
+DEBT_FREE | CHOLAFIN | Mar 2018 | ICR=N/A
+DEBT_FREE | CHOLAFIN | Mar 2020 | ICR=N/A
+DEBT_FREE | ICICIGI | Mar 2016 | ICR=N/A
+DEBT_FREE | ICICIPRULI | Mar 2016 | ICR=N/A
+DEBT_FREE | INFY | Mar 2016 | ICR=N/A
+DEBT_FREE | INFY | Mar 2017 | ICR=N/A
+DEBT_FREE | INFY | Mar 2018 | ICR=N/A
+DEBT_FREE | INFY | Mar 2019 | ICR=N/A
+DEBT_FREE | IRCTC | Mar 2015 | ICR=N/A
+DEBT_FREE | IRCTC | Mar 2016 | ICR=N/A
+DEBT_FREE | JIOFIN | Mar 2023 | ICR=N/A
+DEBT_FREE | JIOFIN | TTM | ICR=N/A
+DEBT_FREE | LICI | Mar 2019 | ICR=N/A
+DEBT_FREE | LICI | Mar 2020 | ICR=N/A
+DEBT_FREE | LICI | Mar 2021 | ICR=N/A
+DEBT_FREE | LICI | Mar 2022 | ICR=N/A
+DEBT_FREE | LICI | TTM | ICR=N/A
+DEBT_FREE | PNB | Mar 2013 | ICR=N/A
+DEBT_FREE | PNB | Mar 2014 | ICR=N/A
+DEBT_FREE | PNB | Mar 2015 | ICR=N/A
+DEBT_FREE | PNB | Mar 2016 | ICR=N/A
+DEBT_FREE | PNB | Mar 2017 | ICR=N/A
+DEBT_FREE | PNB | Mar 2018 | ICR=N/A
+DEBT_FREE | PNB | Mar 2019 | ICR=N/A
+DEBT_FREE | PNB | Mar 2020 | ICR=N/A
+DEBT_FREE | PNB | Mar 2021 | ICR=N/A
+DEBT_FREE | PNB | Mar 2022 | ICR=N/A
+DEBT_FREE | PNB | Mar 2023 | ICR=N/A
+DEBT_FREE | PNB | Mar 2024 | ICR=N/A
+DEBT_FREE | PNB | TTM | ICR=N/A
+DEBT_FREE | SBILIFE | Mar 2020 | ICR=N/A
+DEBT_FREE | SBILIFE | Mar 2021 | ICR=N/A
+DEBT_FREE | SBILIFE | Mar 2022 | ICR=N/A
+DEBT_FREE | SBILIFE | TTM | ICR=N/A
+NULL_RATIO | ADANIENSOL | Mar 2014 | net_profit_margin_pct
+NULL_RATIO | ABB | TTM | return_on_equity_pct
+NULL_RATIO | ADANIENSOL | TTM | return_on_equity_pct
+NULL_RATIO | ADANIENT | TTM | return_on_equity_pct
+NULL_RATIO | ADANIGREEN | TTM | return_on_equity_pct
+NULL_RATIO | ADANIPORTS | TTM | return_on_equity_pct
+NULL_RATIO | ADANIPOWER | TTM | return_on_equity_pct
+NULL_RATIO | AMBUJACEM | Mar 2023 15 | return_on_equity_pct
+NULL_RATIO | AMBUJACEM | TTM | return_on_equity_pct
+NULL_RATIO | APOLLOHOSP | TTM | return_on_equity_pct
+NULL_RATIO | ASIANPAINT | TTM | return_on_equity_pct
+NULL_RATIO | ATGL | TTM | return_on_equity_pct
+NULL_RATIO | AXISBANK | TTM | return_on_equity_pct
+NULL_RATIO | BAJAJ-AUTO | TTM | return_on_equity_pct
+NULL_RATIO | BAJAJFINSV | TTM | return_on_equity_pct
+NULL_RATIO | BAJAJHLDNG | TTM | return_on_equity_pct
+NULL_RATIO | BAJFINANCE | TTM | return_on_equity_pct
+NULL_RATIO | BANKBARODA | TTM | return_on_equity_pct
+NULL_RATIO | BEL | TTM | return_on_equity_pct
+NULL_RATIO | BHARTIARTL | TTM | return_on_equity_pct
+NULL_RATIO | BHEL | TTM | return_on_equity_pct
+NULL_RATIO | BOSCHLTD | TTM | return_on_equity_pct
+NULL_RATIO | BPCL | TTM | return_on_equity_pct
+NULL_RATIO | BRITANNIA | TTM | return_on_equity_pct
+NULL_RATIO | CANBK | TTM | return_on_equity_pct
+NULL_RATIO | CHOLAFIN | TTM | return_on_equity_pct
+NULL_RATIO | CIPLA | TTM | return_on_equity_pct
+NULL_RATIO | COALINDIA | TTM | return_on_equity_pct
+NULL_RATIO | DABUR | TTM | return_on_equity_pct
+NULL_RATIO | DIVISLAB | TTM | return_on_equity_pct
+NULL_RATIO | DLF | TTM | return_on_equity_pct
+NULL_RATIO | DMART | TTM | return_on_equity_pct
+NULL_RATIO | DRREDDY | TTM | return_on_equity_pct
+NULL_RATIO | EICHERMOT | TTM | return_on_equity_pct
+NULL_RATIO | GAIL | TTM | return_on_equity_pct
+NULL_RATIO | GODREJCP | TTM | return_on_equity_pct
+NULL_RATIO | GRASIM | TTM | return_on_equity_pct
+NULL_RATIO | HAL | Mar 2013 | return_on_equity_pct
+NULL_RATIO | HAL | Mar 2014 | return_on_equity_pct
+NULL_RATIO | HAL | Mar 2015 | return_on_equity_pct
+NULL_RATIO | HAL | TTM | return_on_equity_pct
+NULL_RATIO | HAVELLS | TTM | return_on_equity_pct
+NULL_RATIO | HCLTECH | Mar 2016 9m | return_on_equity_pct
+NULL_RATIO | HCLTECH | TTM | return_on_equity_pct
+NULL_RATIO | HDFCBANK | TTM | return_on_equity_pct
+NULL_RATIO | HDFCLIFE | TTM | return_on_equity_pct
+NULL_RATIO | HEROMOTOCO | TTM | return_on_equity_pct
+NULL_RATIO | HINDALCO | TTM | return_on_equity_pct
+NULL_RATIO | HINDUNILVR | TTM | return_on_equity_pct
+NULL_RATIO | ICICIBANK | TTM | return_on_equity_pct
+NULL_RATIO | ICICIGI | TTM | return_on_equity_pct
+NULL_RATIO | ICICIPRULI | TTM | return_on_equity_pct
+NULL_RATIO | INDIGO | TTM | return_on_equity_pct
+NULL_RATIO | INDUSINDBK | TTM | return_on_equity_pct
+NULL_RATIO | INFY | TTM | return_on_equity_pct
+NULL_RATIO | IOC | TTM | return_on_equity_pct
+NULL_RATIO | IRCTC | TTM | return_on_equity_pct
+NULL_RATIO | IRFC | TTM | return_on_equity_pct
+NULL_RATIO | ITC | TTM | return_on_equity_pct
+NULL_RATIO | JINDALSTEL | TTM | return_on_equity_pct
+NULL_RATIO | JIOFIN | TTM | return_on_equity_pct
+NULL_RATIO | JSWENERGY | TTM | return_on_equity_pct
+NULL_RATIO | JSWSTEEL | TTM | return_on_equity_pct
+NULL_RATIO | KOTAKBANK | TTM | return_on_equity_pct
+NULL_RATIO | LICI | TTM | return_on_equity_pct
+NULL_RATIO | LODHA | TTM | return_on_equity_pct
+NULL_RATIO | LT | TTM | return_on_equity_pct
+NULL_RATIO | LTIM | TTM | return_on_equity_pct
+NULL_RATIO | M&M | TTM | return_on_equity_pct
+NULL_RATIO | MARUTI | TTM | return_on_equity_pct
+NULL_RATIO | MOTHERSON | TTM | return_on_equity_pct
+NULL_RATIO | NAUKRI | TTM | return_on_equity_pct
+NULL_RATIO | NESTLEIND | TTM | return_on_equity_pct
+NULL_RATIO | NHPC | TTM | return_on_equity_pct
+NULL_RATIO | NTPC | TTM | return_on_equity_pct
+NULL_RATIO | ONGC | TTM | return_on_equity_pct
+NULL_RATIO | PFC | TTM | return_on_equity_pct
+NULL_RATIO | PIDILITIND | TTM | return_on_equity_pct
+NULL_RATIO | PNB | TTM | return_on_equity_pct
+NULL_RATIO | POWERGRID | TTM | return_on_equity_pct
+NULL_RATIO | RECLTD | TTM | return_on_equity_pct
+NULL_RATIO | RELIANCE | TTM | return_on_equity_pct
+NULL_RATIO | SBILIFE | TTM | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2013 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2014 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2015 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2016 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2017 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2018 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2019 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2020 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2021 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2022 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2023 | return_on_equity_pct
+NULL_RATIO | SBIN | Mar 2024 | return_on_equity_pct
+NULL_RATIO | SBIN | TTM | return_on_equity_pct
+NULL_RATIO | SHREECEM | Mar 2016 9m | return_on_equity_pct
+NULL_RATIO | SHREECEM | TTM | return_on_equity_pct
+NULL_RATIO | SHRIRAMFIN | TTM | return_on_equity_pct
+NULL_RATIO | SUNPHARMA | TTM | return_on_equity_pct
+NULL_RATIO | TATACONSUM | TTM | return_on_equity_pct
+NULL_RATIO | TATAMOTORS | TTM | return_on_equity_pct
+NULL_RATIO | TATAPOWER | TTM | return_on_equity_pct
+NULL_RATIO | TATASTEEL | TTM | return_on_equity_pct
+NULL_RATIO | TCS | TTM | return_on_equity_pct
+NULL_RATIO | TECHM | TTM | return_on_equity_pct
+NULL_RATIO | TITAN | TTM | return_on_equity_pct
+NULL_RATIO | TORNTPHARM | TTM | return_on_equity_pct
+NULL_RATIO | TRENT | TTM | return_on_equity_pct
+NULL_RATIO | TVSMOTOR | TTM | return_on_equity_pct
+NULL_RATIO | ABB | TTM | return_on_assets_pct
+NULL_RATIO | ADANIENSOL | Mar 2014 | return_on_assets_pct
+NULL_RATIO | ADANIENSOL | TTM | return_on_assets_pct
+NULL_RATIO | ADANIENT | TTM | return_on_assets_pct
+NULL_RATIO | ADANIGREEN | TTM | return_on_assets_pct
+NULL_RATIO | ADANIPORTS | TTM | return_on_assets_pct
+NULL_RATIO | ADANIPOWER | TTM | return_on_assets_pct
+NULL_RATIO | AMBUJACEM | Mar 2023 15 | return_on_assets_pct
+NULL_RATIO | AMBUJACEM | TTM | return_on_assets_pct
+NULL_RATIO | APOLLOHOSP | TTM | return_on_assets_pct
+NULL_RATIO | ASIANPAINT | TTM | return_on_assets_pct
+NULL_RATIO | ATGL | TTM | return_on_assets_pct
+NULL_RATIO | AXISBANK | TTM | return_on_assets_pct
+NULL_RATIO | BAJAJ-AUTO | TTM | return_on_assets_pct
+NULL_RATIO | BAJAJFINSV | TTM | return_on_assets_pct
+NULL_RATIO | BAJAJHLDNG | TTM | return_on_assets_pct
+NULL_RATIO | BAJFINANCE | TTM | return_on_assets_pct
+NULL_RATIO | BANKBARODA | TTM | return_on_assets_pct
+NULL_RATIO | BEL | TTM | return_on_assets_pct
+NULL_RATIO | BHARTIARTL | TTM | return_on_assets_pct
+NULL_RATIO | BHEL | TTM | return_on_assets_pct
+NULL_RATIO | BOSCHLTD | TTM | return_on_assets_pct
+NULL_RATIO | BPCL | TTM | return_on_assets_pct
+NULL_RATIO | BRITANNIA | TTM | return_on_assets_pct
+NULL_RATIO | CANBK | TTM | return_on_assets_pct
+NULL_RATIO | CHOLAFIN | TTM | return_on_assets_pct
+NULL_RATIO | CIPLA | TTM | return_on_assets_pct
+NULL_RATIO | COALINDIA | TTM | return_on_assets_pct
+NULL_RATIO | DABUR | TTM | return_on_assets_pct
+NULL_RATIO | DIVISLAB | TTM | return_on_assets_pct
+NULL_RATIO | DLF | TTM | return_on_assets_pct
+NULL_RATIO | DMART | TTM | return_on_assets_pct
+NULL_RATIO | DRREDDY | TTM | return_on_assets_pct
+NULL_RATIO | EICHERMOT | TTM | return_on_assets_pct
+NULL_RATIO | GAIL | TTM | return_on_assets_pct
+NULL_RATIO | GODREJCP | TTM | return_on_assets_pct
+NULL_RATIO | GRASIM | TTM | return_on_assets_pct
+NULL_RATIO | HAL | Mar 2013 | return_on_assets_pct
+NULL_RATIO | HAL | Mar 2014 | return_on_assets_pct
+NULL_RATIO | HAL | Mar 2015 | return_on_assets_pct
+NULL_RATIO | HAL | TTM | return_on_assets_pct
+NULL_RATIO | HAVELLS | TTM | return_on_assets_pct
+NULL_RATIO | HCLTECH | Mar 2016 9m | return_on_assets_pct
+NULL_RATIO | HCLTECH | TTM | return_on_assets_pct
+NULL_RATIO | HDFCBANK | TTM | return_on_assets_pct
+NULL_RATIO | HDFCLIFE | TTM | return_on_assets_pct
+NULL_RATIO | HEROMOTOCO | TTM | return_on_assets_pct
+NULL_RATIO | HINDALCO | TTM | return_on_assets_pct
+NULL_RATIO | HINDUNILVR | TTM | return_on_assets_pct
+NULL_RATIO | ICICIBANK | TTM | return_on_assets_pct
+NULL_RATIO | ICICIGI | TTM | return_on_assets_pct
+NULL_RATIO | ICICIPRULI | TTM | return_on_assets_pct
+NULL_RATIO | INDIGO | TTM | return_on_assets_pct
+NULL_RATIO | INDUSINDBK | TTM | return_on_assets_pct
+NULL_RATIO | INFY | TTM | return_on_assets_pct
+NULL_RATIO | IOC | TTM | return_on_assets_pct
+NULL_RATIO | IRCTC | TTM | return_on_assets_pct
+NULL_RATIO | IRFC | TTM | return_on_assets_pct
+NULL_RATIO | ITC | TTM | return_on_assets_pct
+NULL_RATIO | JINDALSTEL | TTM | return_on_assets_pct
+NULL_RATIO | JIOFIN | TTM | return_on_assets_pct
+NULL_RATIO | JSWENERGY | TTM | return_on_assets_pct
+NULL_RATIO | JSWSTEEL | TTM | return_on_assets_pct
+NULL_RATIO | KOTAKBANK | TTM | return_on_assets_pct
+NULL_RATIO | LICI | TTM | return_on_assets_pct
+NULL_RATIO | LODHA | TTM | return_on_assets_pct
+NULL_RATIO | LT | TTM | return_on_assets_pct
+NULL_RATIO | LTIM | TTM | return_on_assets_pct
+NULL_RATIO | M&M | TTM | return_on_assets_pct
+NULL_RATIO | MARUTI | TTM | return_on_assets_pct
+NULL_RATIO | MOTHERSON | TTM | return_on_assets_pct
+NULL_RATIO | NAUKRI | TTM | return_on_assets_pct
+NULL_RATIO | NESTLEIND | TTM | return_on_assets_pct
+NULL_RATIO | NHPC | TTM | return_on_assets_pct
+NULL_RATIO | NTPC | TTM | return_on_assets_pct
+NULL_RATIO | ONGC | TTM | return_on_assets_pct
+NULL_RATIO | PFC | TTM | return_on_assets_pct
+NULL_RATIO | PIDILITIND | TTM | return_on_assets_pct
+NULL_RATIO | PNB | TTM | return_on_assets_pct
+NULL_RATIO | POWERGRID | TTM | return_on_assets_pct
+NULL_RATIO | RECLTD | TTM | return_on_assets_pct
+NULL_RATIO | RELIANCE | TTM | return_on_assets_pct
+NULL_RATIO | SBILIFE | TTM | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2013 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2014 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2015 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2016 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2017 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2018 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2019 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2020 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2021 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2022 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2023 | return_on_assets_pct
+NULL_RATIO | SBIN | Mar 2024 | return_on_assets_pct
+NULL_RATIO | SBIN | TTM | return_on_assets_pct
+NULL_RATIO | SHREECEM | Mar 2016 9m | return_on_assets_pct
+NULL_RATIO | SHREECEM | TTM | return_on_assets_pct
+NULL_RATIO | SHRIRAMFIN | TTM | return_on_assets_pct
+NULL_RATIO | SUNPHARMA | TTM | return_on_assets_pct
+NULL_RATIO | TATACONSUM | TTM | return_on_assets_pct
+NULL_RATIO | TATAMOTORS | TTM | return_on_assets_pct
+NULL_RATIO | TATAPOWER | TTM | return_on_assets_pct
+NULL_RATIO | TATASTEEL | TTM | return_on_assets_pct
+NULL_RATIO | TCS | TTM | return_on_assets_pct
+NULL_RATIO | TECHM | TTM | return_on_assets_pct
+NULL_RATIO | TITAN | TTM | return_on_assets_pct
+NULL_RATIO | TORNTPHARM | TTM | return_on_assets_pct
+NULL_RATIO | TRENT | TTM | return_on_assets_pct
+NULL_RATIO | TVSMOTOR | TTM | return_on_assets_pct
+NULL_RATIO | ABB | Dec 2012 | interest_coverage
+NULL_RATIO | ABB | Mar 2014 | interest_coverage
+NULL_RATIO | ABB | Mar 2015 | interest_coverage
+NULL_RATIO | ADANIENSOL | Mar 2014 | interest_coverage
+NULL_RATIO | BAJAJHLDNG | Mar 2013 | interest_coverage
+NULL_RATIO | BAJAJHLDNG | Mar 2014 | interest_coverage
+NULL_RATIO | BAJAJHLDNG | Mar 2015 | interest_coverage
+NULL_RATIO | BAJAJHLDNG | Mar 2016 | interest_coverage
+NULL_RATIO | BAJAJHLDNG | Mar 2017 | interest_coverage
+NULL_RATIO | BAJAJHLDNG | Mar 2018 | interest_coverage
+NULL_RATIO | BAJAJHLDNG | Mar 2019 | interest_coverage
+NULL_RATIO | BOSCHLTD | Dec 2013 | interest_coverage
+NULL_RATIO | CHOLAFIN | Mar 2015 | interest_coverage
+NULL_RATIO | CHOLAFIN | Mar 2018 | interest_coverage
+NULL_RATIO | CHOLAFIN | Mar 2020 | interest_coverage
+NULL_RATIO | ICICIGI | Mar 2016 | interest_coverage
+NULL_RATIO | ICICIPRULI | Mar 2016 | interest_coverage
+NULL_RATIO | INFY | Mar 2016 | interest_coverage
+NULL_RATIO | INFY | Mar 2017 | interest_coverage
+NULL_RATIO | INFY | Mar 2018 | interest_coverage
+NULL_RATIO | INFY | Mar 2019 | interest_coverage
+NULL_RATIO | IRCTC | Mar 2015 | interest_coverage
+NULL_RATIO | IRCTC | Mar 2016 | interest_coverage
+NULL_RATIO | JIOFIN | Mar 2023 | interest_coverage
+NULL_RATIO | JIOFIN | TTM | interest_coverage
+NULL_RATIO | LICI | Mar 2019 | interest_coverage
+NULL_RATIO | LICI | Mar 2020 | interest_coverage
+NULL_RATIO | LICI | Mar 2021 | interest_coverage
+NULL_RATIO | LICI | Mar 2022 | interest_coverage
+NULL_RATIO | LICI | TTM | interest_coverage
+NULL_RATIO | PNB | Mar 2013 | interest_coverage
+NULL_RATIO | PNB | Mar 2014 | interest_coverage
+NULL_RATIO | PNB | Mar 2015 | interest_coverage
+NULL_RATIO | PNB | Mar 2016 | interest_coverage
+NULL_RATIO | PNB | Mar 2017 | interest_coverage
+NULL_RATIO | PNB | Mar 2018 | interest_coverage
+NULL_RATIO | PNB | Mar 2019 | interest_coverage
+NULL_RATIO | PNB | Mar 2020 | interest_coverage
+NULL_RATIO | PNB | Mar 2021 | interest_coverage
+NULL_RATIO | PNB | Mar 2022 | interest_coverage
+NULL_RATIO | PNB | Mar 2023 | interest_coverage
+NULL_RATIO | PNB | Mar 2024 | interest_coverage
+NULL_RATIO | PNB | TTM | interest_coverage
+NULL_RATIO | SBILIFE | Mar 2020 | interest_coverage
+NULL_RATIO | SBILIFE | Mar 2021 | interest_coverage
+NULL_RATIO | SBILIFE | Mar 2022 | interest_coverage
+NULL_RATIO | SBILIFE | TTM | interest_coverage
