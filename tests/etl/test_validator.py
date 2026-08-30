@@ -40,20 +40,6 @@ def test_dq02_company_year():
 
     assert check_company_year(df) == 1
 
-def test_dq02_company_year():
-    df = pd.DataFrame({
-        "company_id": [1, 1, 2, 1],
-        "year": [2024, 2024, 2024, 2023]
-    })
-
-    assert check_company_year(df) == 1
-
-def test_dq03_fk():
-    companies = pd.DataFrame({"company_id": [1, 2, 3]})
-    data = pd.DataFrame({"company_id": [1, 2, 99]})
-
-    assert check_fk(data, companies, "company_id") == 1
-
 def test_dq03_fk():
     companies = pd.DataFrame({
         "id": [1, 2, 3]
@@ -77,17 +63,15 @@ def test_dq03_valid_fk():
 
     assert check_fk(data, companies, "company_id") == 0
 
-def check_bs_balance(df):
-    valid = df["total_assets"] != 0
+def test_dq04_bs_balance():
+    df = pd.DataFrame({
+        "total_assets": [1000, 1000],
+        "total_liabilities": [1000, 900]
+    })
 
-    difference = (
-        df.loc[valid, "total_assets"]
-        - df.loc[valid, "total_liabilities"]
-    ).abs()
+    assert check_bs_balance(df) == 1
 
-    ratio = difference / df.loc[valid, "total_assets"]
 
-    return (ratio >= 0.01).sum()
 
 def test_dq05_opm():
     df = pd.DataFrame({

@@ -3,9 +3,9 @@ import pytest
 
 from src.etl.loader import load_csv
 
+def test_load_csv(tmp_path):
+    file = tmp_path / "test.csv"
 
-def test_load_csv():
-    file = "test.csv"
     pd.DataFrame({"company": ["TCS", "INFY"]}).to_csv(file, index=False)
 
     result = load_csv(file)
@@ -52,3 +52,4 @@ def test_column_names(tmp_path):
 def test_missing_file():
     with pytest.raises(FileNotFoundError):
         load_csv("does_not_exist.csv")
+
