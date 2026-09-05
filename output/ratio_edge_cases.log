@@ -924,4 +924,56 @@ NULL_RATIO | PNB | TTM | interest_coverage
 NULL_RATIO | SBILIFE | Mar 2020 | interest_coverage
 NULL_RATIO | SBILIFE | Mar 2021 | interest_coverage
 NULL_RATIO | SBILIFE | Mar 2022 | interest_coverage
-NULL_RATIO | SBILIFE | TTM | interest_coverage
+NULL_RATIO | SBILIFE | TTM | interest_coverageROCE | ABB | Mar 2024 | source=46.00 | calculated=36.54 | difference=9.46 | category=formula discrepancy
+ROE | ADANIENT | Mar 2024 | source=13.64 | calculated=8.53 | difference=5.11 | category=version difference
+ROCE | ADANIGREEN | Mar 2024 | source=96.50 | calculated=7.25 | difference=89.25 | category=formula discrepancy
+ROE | ADANIPOWER | Mar 2024 | source=57.10 | calculated=48.28 | difference=8.82 | category=version difference
+ROCE | ADANIPOWER | Mar 2024 | source=32.20 | calculated=18.39 | difference=13.81 | category=formula discrepancy
+ROCE | ASIANPAINT | Mar 2024 | source=41.75 | calculated=31.75 | difference=10.00 | category=formula discrepancy
+ROCE | BAJAJ-AUTO | Mar 2024 | source=33.50 | calculated=27.21 | difference=6.29 | category=formula discrepancy
+ROE | BAJAJFINSV | Mar 2024 | source=11.72 | calculated=25.85 | difference=14.13 | category=version difference
+ROCE | BAJAJFINSV | Mar 2024 | source=21.14 | calculated=11.45 | difference=9.69 | category=formula discrepancy
+ROCE | BAJAJHLDNG | Mar 2024 | source=13.10 | calculated=2.81 | difference=10.29 | category=formula discrepancy
+ROCE | BAJFINANCE | Mar 2024 | source=11.90 | calculated=4.17 | difference=7.73 | category=formula discrepancy
+ROE | BEL | Mar 2024 | source=26.30 | calculated=4744.05 | difference=4717.75 | category=version difference
+ROCE | BEL | Mar 2024 | source=34.60 | calculated=3628.35 | difference=3593.75 | category=formula discrepancy
+ROCE | BOSCHLTD | Mar 2024 | source=20.60 | calculated=13.76 | difference=6.84 | category=formula discrepancy
+ROE | BPCL | Mar 2024 | source=41.90 | calculated=35.51 | difference=6.39 | category=version difference
+ROCE | CHOLAFIN | Mar 2024 | source=10.40 | calculated=3.37 | difference=7.03 | category=formula discrepancy
+ROCE | CIPLA | Mar 2024 | source=22.80 | calculated=67.60 | difference=44.80 | category=formula discrepancy
+ROE | COALINDIA | Mar 2024 | source=52.00 | calculated=45.17 | difference=6.83 | category=version difference
+ROCE | COALINDIA | Mar 2024 | source=63.60 | calculated=98.17 | difference=34.57 | category=formula discrepancy
+ROCE | DRREDDY | Mar 2024 | source=26.50 | calculated=21.36 | difference=5.14 | category=formula discrepancy
+ROCE | EICHERMOT | Mar 2024 | source=31.10 | calculated=20.21 | difference=10.89 | category=formula discrepancy
+ROE | GODREJCP | Mar 2024 | source=6.77 | calculated=-4.45 | difference=11.22 | category=version difference
+ROCE | GODREJCP | Mar 2024 | source=26.49 | calculated=17.17 | difference=9.32 | category=formula discrepancy
+ROE | HAL | Mar 2024 | source=28.90 | calculated=3816.58 | difference=3787.68 | category=version difference
+ROCE | HAL | Mar 2024 | source=38.90 | calculated=2590.99 | difference=2552.09 | category=formula discrepancy
+ROCE | HDFCLIFE | Mar 2024 | source=6.61 | calculated=645.95 | difference=639.34 | category=formula discrepancy
+ROCE | HEROMOTOCO | Mar 2024 | source=29.10 | calculated=173.71 | difference=144.61 | category=formula discrepancy
+ROCE | HINDALCO | Mar 2024 | source=11.30 | calculated=113.58 | difference=102.28 | category=formula discrepancy
+ROCE | HINDUNILVR | Mar 2024 | source=27.20 | calculated=87.32 | difference=60.12 | category=formula discrepancy
+ROCE | ICICIGI | Mar 2024 | source=22.50 | calculated=145.23 | difference=122.73 | category=formula discrepancy
+ROCE | ICICIPRULI | Mar 2024 | source=8.75 | calculated=753.98 | difference=745.23 | category=formula discrepancy
+ROCE | INDIGO | Mar 2024 | source=24.50 | calculated=4953.54 | difference=4929.04 | category=formula discrepancy
+ROCE | INFY | Mar 2024 | source=40.00 | calculated=32.91 | difference=7.09 | category=formula discrepancy
+ROE | IRCTC | Mar 2024 | source=40.40 | calculated=34.40 | difference=6.00 | category=version difference
+ROCE | IRCTC | Mar 2024 | source=53.80 | calculated=42.83 | difference=10.97 | category=formula discrepancy
+ROE | LICI | Mar 2024 | source=63.61 | calculated=49.45 | difference=14.16 | category=version difference
+ROCE | LICI | Mar 2024 | source=63.79 | calculated=39.05 | difference=24.74 | category=formula discrepancy
+ROE | LT | Mar 2024 | source=10.49 | calculated=77.67 | difference=67.18 | category=version difference
+ROCE | LT | Mar 2024 | source=17.18 | calculated=118.53 | difference=101.35 | category=formula discrepancy
+ROCE | LTIM | Mar 2024 | source=34.10 | calculated=25.21 | difference=8.89 | category=formula discrepancy
+ROCE | M&M | Mar 2024 | source=26.98 | calculated=11.54 | difference=15.44 | category=formula discrepancy
+ROCE | MARUTI | Mar 2024 | source=23.67 | calculated=15.59 | difference=8.08 | category=formula discrepancy
+ROE | NESTLEIND | Mar 2024 | source=135.61 | calculated=117.75 | difference=17.86 | category=version difference
+ROCE | NESTLEIND | Mar 2024 | source=185.43 | calculated=143.15 | difference=42.28 | category=formula discrepancy
+ROE | PFC | Mar 2024 | source=19.49 | calculated=26.16 | difference=6.67 | category=version difference
+ROCE | PFC | Mar 2024 | source=9.96 | calculated=3.48 | difference=6.48 | category=formula discrepancy
+ROE | PNB | Mar 2024 | source=8.70 | calculated=61.32 | difference=52.62 | category=version difference
+ROCE | SBILIFE | Mar 2024 | source=13.20 | calculated=1.14 | difference=12.06 | category=formula discrepancy
+ROCE | SHRIRAMFIN | Mar 2024 | source=11.30 | calculated=4.06 | difference=7.24 | category=formula discrepancy
+ROE | TATAMOTORS | Mar 2024 | source=49.40 | calculated=37.46 | difference=11.94 | category=version difference
+ROE | TATASTEEL | Mar 2024 | source=6.55 | calculated=-5.33 | difference=11.88 | category=version difference
+ROE | TCS | Mar 2024 | source=0.52 | calculated=50.94 | difference=50.42 | category=version difference
+ROE | TRENT | Mar 2024 | source=27.20 | calculated=36.31 | difference=9.11 | category=version difference

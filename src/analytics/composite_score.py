@@ -9,12 +9,15 @@ def scale(series):
         return pd.Series(50, index=series.index)
 
     clipped = series.clip(low, high)
-    return ((clipped - low) / (high - low)) * 100
+
+    return (
+        ((clipped - low) / (high - low)) * 100
+    ).fillna(50)
 
 
 def de_score(x):
     if pd.isna(x):
-        return None
+        return 50
     if x <= 0:
         return 100
     if x <= 0.5:
@@ -57,8 +60,9 @@ def add_composite_score(df):
     de_s = df["debt_to_equity"].apply(de_score)
     icr_s = df["interest_coverage"].apply(icr_score)
 
-    fcf_positive = (df["free_cash_flow_cr"] > 0).astype(int) * 100
-
+    fcf_positive = df["free_cash_flow_cr"].apply(
+    lambda x: 50 if pd.isna(x) else (100 if x > 0 else 0))
+    
     score = (
         roe_s * 0.15
         + roce_s * 0.10
@@ -73,5 +77,15 @@ def add_composite_score(df):
     )
 
     df["composite_quality_score"] = score.clip(0, 100)
+
+    return df
+
+def sector_relative_score(df):
+    df=df.copy()
+
+    df["sector_composite_score"]=(
+        df.groupby("broad_sector")["composite_quality_score"]
+        .rank(pct=True)*100
+    )
 
     return df
