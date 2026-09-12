@@ -1,70 +1,369 @@
 # Nifty100 Financial Intelligence Platform
 
-A financial data intelligence platform built using Python, Pandas, SQL, and SQLite to ingest, validate, store, and analyze financial data for Nifty 100 companies.
+A financial intelligence and analytics platform for Nifty 100 companies built using Python, Pandas, SQLite, Plotly, and Streamlit.
+
+The platform ingests and validates financial data, calculates financial KPIs, performs peer and valuation analysis, provides financial screening, and presents the results through an interactive Streamlit dashboard.
 
 This project is developed as part of the Bluestock FinTech internship project.
 
-## Sprint 1 — Data Foundation
+---
 
-Sprint 1 focuses on building a reliable data foundation for future financial analytics modules.
+## Project Overview
 
-### Objectives
+The Nifty100 Financial Intelligence Platform provides financial analytics for 92 Nifty 100 companies.
 
-- Build an ETL pipeline for financial datasets
-- Normalize company tickers and financial years
-- Implement data quality validation rules
-- Create a relational SQLite database
-- Load financial datasets into the database
-- Validate primary and foreign key relationships
-- Perform manual data quality review
-- Run exploratory SQL analysis
+The platform currently includes:
+
+- Financial data ETL pipeline
+- Data quality validation
+- SQLite financial database
+- Financial ratio and KPI engine
+- CAGR and cash-flow analytics
+- Composite financial health scoring
+- Financial screener
+- Peer comparison engine
+- Peer percentile analysis
+- Capital allocation classification
+- Valuation analysis
+- Interactive Streamlit dashboard
+- Annual report access
+
+---
 
 ## Tech Stack
 
 - Python
 - Pandas
+- NumPy
 - SQLite
 - SQL
+- Streamlit
+- Plotly
+- OpenPyXL
 - Pytest
 - Git
 - GitHub
 
-## Project Structure
+---
+
+## Sprint 1 — Data Foundation
+
+Sprint 1 established the core financial data foundation.
+
+### Key Deliverables
+
+- ETL pipeline for financial datasets
+- Financial year and ticker normalization
+- 16 data quality rules (`DQ-01` to `DQ-16`)
+- Relational SQLite database
+- Primary and foreign key validation
+- Load audit report
+- Validation failure report
+- Exploratory SQL analysis
+- ETL unit tests
+
+### Sprint 1 Results
 
 ```text
-n100-financial-intelligence/
-│
-├── data/raw/                   # Raw financial datasets
-├── db/
-│   └── schema.sql              # SQLite database schema
-│
-├── src/etl/
-│   ├── loader.py               # CSV loading utilities
-│   ├── normaliser.py           # Year and ticker normalization
-│   ├── validator.py            # DQ-01 to DQ-16
-│   ├── run_validation.py       # Runs validation
-│   ├── create_db.py            # Creates SQLite database
-│   └── load_database.py        # Full database load
-│
-├── tests/etl/                  # ETL unit tests
-├── notebooks/
-│   └── exploratory_queries.sql # 10 exploratory SQL queries
-│
-├── output/
-│   ├── load_audit.csv
-│   └── validation_failures.csv
-│
-├── docs/
-│   └── sprint1_retrospective.md
-│
-├── requirements.txt
-├── Makefile
-└── README.md
+Companies: 92
+Foreign Key Violations: 0
+CRITICAL DQ Failures: 0
+ETL Tests: 54 passed
 ```
+
+The main database is:
+
+```text
+nifty100.db
+```
+
+Validation output:
+
+```text
+output/validation_failures.csv
+```
+
+Load audit:
+
+```text
+output/load_audit.csv
+```
+
+---
+
+## Sprint 2 — Financial Ratio Engine
+
+Sprint 2 implemented the financial analytics and KPI calculation layer.
+
+### Key Features
+
+- Profitability ratios
+- Leverage ratios
+- Growth metrics
+- Cash-flow KPIs
+- Revenue CAGR
+- PAT CAGR
+- FCF CAGR
+- Capital allocation analysis
+- Composite financial score
+- Ratio edge-case handling
+
+The financial ratio engine contains historical financial metrics for the companies available in the database.
+
+### Sprint 2 Testing
+
+```text
+KPI Tests: 37 passed
+```
+
+Important modules:
+
+```text
+src/analytics/ratios.py
+src/analytics/cagr.py
+src/analytics/cashflow_kpis.py
+src/analytics/composite_score.py
+src/analytics/populate_ratios.py
+```
+
+---
+
+## Sprint 3 — Screener & Peer Comparison Engine
+
+Sprint 3 added company screening, financial health scoring, and peer comparison capabilities.
+
+### Financial Screener
+
+The screener supports financial filtering using metrics such as:
+
+- ROE
+- Debt-to-Equity
+- Free Cash Flow
+- Revenue CAGR
+- PAT CAGR
+- Operating Profit Margin
+- P/E
+- P/B
+- Dividend Yield
+- Interest Coverage Ratio
+
+Preset screens include:
+
+- Quality
+- Value
+- Growth
+- Dividend
+- Debt-Free
+- Turnaround
+
+### Peer Comparison
+
+Companies are grouped into 11 peer groups.
+
+The peer engine provides:
+
+- Peer percentile calculations
+- 10 peer-comparison metrics
+- Benchmark-company identification
+- 8-axis radar charts
+- Peer KPI comparison tables
+- Peer comparison Excel reports
+
+Generated outputs include:
+
+```text
+output/peer_comparison.xlsx
+reports/radar_charts/
+```
+
+---
+
+## Sprint 4 — Interactive Dashboard & Valuation
+
+Sprint 4 introduced the interactive Streamlit dashboard and valuation module.
+
+### Streamlit Dashboard
+
+The dashboard contains 8 screens:
+
+1. Home
+2. Company Profile
+3. Financial Screener
+4. Peer Comparison
+5. Trend Analysis
+6. Sector Analysis
+7. Capital Allocation Map
+8. Annual Reports
+
+Run the dashboard using:
+
+```bash
+streamlit run src/dashboard/app.py
+```
+
+---
+
+## Dashboard Features
+
+### Home
+
+Provides an overview of the Nifty 100 financial universe, including:
+
+- Financial KPI cards
+- Sector distribution
+- Composite-score leaders
+- Year-based analysis
+
+### Company Profile
+
+Provides company-level financial analysis including:
+
+- Company information
+- Latest financial KPI cards
+- Revenue and Net Profit trend
+- ROE and ROCE trend
+- Pros and Cons
+- Partial-history handling
+- Missing-data handling
+
+### Financial Screener
+
+Provides interactive filtering using 10 financial metrics.
+
+Features include:
+
+- 10 slider filters
+- 6 preset strategies
+- Live result count
+- Sortable company table
+- CSV download
+- Empty-result handling
+
+### Peer Comparison
+
+Provides comparison against similar companies using:
+
+- Peer-group selector
+- Company selector
+- 8-metric radar chart
+- Peer average comparison
+- KPI comparison table
+- Benchmark highlighting
+
+### Trend Analysis
+
+Provides historical financial trend analysis.
+
+Features include:
+
+- Company search
+- Maximum 3 metrics per chart
+- 10-year historical trend
+- YoY annotations
+- Normalized trend comparison
+- Missing-metric handling
+
+### Sector Analysis
+
+Provides sector-level analysis using:
+
+- Sector selector
+- Revenue vs ROE bubble chart
+- Market-cap bubble sizing
+- Sub-sector grouping
+- Sector median KPI analysis
+
+### Capital Allocation Map
+
+Classifies companies according to operating, investing, and financing cash-flow patterns.
+
+Eight capital-allocation patterns are supported:
+
+- Shareholder Returns
+- Reinvestor
+- Mixed
+- Liquidating Assets
+- Growth Funded by Debt
+- Distress Signal
+- Pre-Revenue
+- Cash Accumulator
+
+The page includes:
+
+- Interactive treemap
+- Year selector
+- Pattern drill-down
+- Company list
+- CSV download
+- Partial-year data handling
+
+### Annual Reports
+
+Provides centralized access to historical annual reports.
+
+Features include:
+
+- Company search
+- Available report years
+- BSE PDF links
+- Report availability validation
+- Friendly unavailable-report indicator
+
+---
+
+## Valuation Module
+
+The valuation module is implemented in:
+
+```text
+src/analytics/valuation.py
+```
+
+It calculates:
+
+```text
+FCF Yield % = Free Cash Flow / Market Capitalization × 100
+```
+
+It also calculates:
+
+- Latest-year sector median P/E
+- 5-year median P/E
+- P/E vs sector median percentage
+- P/B
+- EV/EBITDA
+
+### Valuation Classification
+
+```text
+P/E > Sector Median × 1.5  → Caution
+P/E < Sector Median × 0.7  → Discount
+Otherwise                  → Fair
+```
+
+Latest valuation results:
+
+```text
+Total Companies: 92
+Fair: 48
+Discount: 30
+Caution: 14
+```
+
+Generated reports:
+
+```text
+output/valuation_summary.xlsx
+output/valuation_flags.csv
+```
+
+`valuation_flags.csv` contains only companies classified as Caution or Discount.
+
+---
 
 ## Data Sources
 
-The project processes financial datasets covering:
+The platform processes financial datasets covering:
 
 - Companies
 - Profit & Loss
@@ -79,11 +378,15 @@ The project processes financial datasets covering:
 - Documents
 - Pros & Cons
 
+Raw source data is treated as read-only.
+
+---
+
 ## Data Quality Validation
 
 The ETL pipeline implements 16 data quality rules (`DQ-01` to `DQ-16`).
 
-The checks include:
+Checks include:
 
 - Primary key uniqueness
 - Company/year uniqueness
@@ -98,59 +401,13 @@ The checks include:
 - EPS consistency
 - Historical year coverage
 
-Validation issues are written to:
+CRITICAL validation failures must be resolved before data is accepted.
 
-```text
-output/validation_failures.csv
-```
+---
 
-CRITICAL issues must be resolved before the data is accepted.
+## Testing & Integration QA
 
-## Database
-
-The processed data is stored in:
-
-```text
-nifty100.db
-```
-
-Foreign key enforcement is enabled using:
-
-```sql
-PRAGMA foreign_keys = ON;
-```
-
-Final Sprint 1 database checks:
-
-```text
-Companies: 92
-Foreign Key Violations: 0
-CRITICAL DQ Failures: 0
-```
-
-## Load Audit
-
-Every data load is recorded in:
-
-```text
-output/load_audit.csv
-```
-
-The audit tracks:
-
-```text
-table
-rows_read
-rows_loaded
-rows_rejected
-critical_rejections
-```
-
-This makes the ETL process traceable and helps identify rows removed during cleaning.
-
-## Testing
-
-The ETL pipeline is tested using Pytest.
+Automated testing is performed using Pytest.
 
 Run:
 
@@ -158,76 +415,142 @@ Run:
 pytest -q
 ```
 
-Sprint 1 result:
+Sprint 4 integration QA included:
+
+- All 8 Streamlit screens tested
+- 10 companies tested across multiple sectors
+- Partial historical data tested
+- Missing `None` / `NaN` values tested
+- Extreme screener filters tested
+- Empty screener result handling tested
+- Chart sizing and responsiveness checked
+- Capital Allocation interaction tested
+- Annual Report availability handling tested
+
+### Company Profile Performance
+
+Five Company Profile screens were measured against the requirement of less than 3 seconds:
+
+| Ticker | Load Time |
+|---|---:|
+| TCS | 0.59 sec |
+| INFY | 0.12 sec |
+| HDFCBANK | 0.13 sec |
+| RELIANCE | 0.12 sec |
+| SUNPHARMA | 0.12 sec |
+
+All five tests passed the `< 3 seconds` requirement.
+
+---
+
+## Missing & Partial Data Handling
+
+The dashboard is designed to handle incomplete financial data safely.
+
+Examples:
+
+- Missing metrics display `N/A`
+- Missing trend metrics display an information message
+- Partial historical data displays only the available years
+- A limited-data message is shown when fewer than 10 years are available
+- Missing Pros & Cons display a friendly message
+- Unavailable annual reports display `Report unavailable`
+
+Missing financial values are not automatically replaced with zero because doing so could misrepresent the underlying financial data.
+
+---
+
+## Project Structure
 
 ```text
-54 passed
-0 failed
+n100-financial-intelligence/
+│
+├── data/
+│   ├── raw/
+│   └── supporting/
+│
+├── src/
+│   ├── etl/
+│   ├── analytics/
+│   └── dashboard/
+│       ├── app.py
+│       ├── pages/
+│       └── utils/
+│
+├── tests/
+│   ├── etl/
+│   └── kpi/
+│
+├── notebooks/
+├── output/
+├── reports/
+├── docs/
+├── config/
+│
+├── nifty100.db
+├── requirements.txt
+├── pytest.ini
+├── Makefile
+└── README.md
 ```
 
-## Exploratory SQL Analysis
-
-Ten exploratory SQL queries are available in:
-
-```text
-notebooks/exploratory_queries.sql
-```
-
-They cover:
-
-- Company counts
-- Financial statement analysis
-- Top companies by sales
-- Top companies by net profit
-- ROE analysis
-- Sector distribution
-- Historical data coverage
-- Market capitalization
-- Company and financial-data joins
-
-## Sprint 1 Results
-
-Sprint 1 successfully delivered:
-
-- SQLite financial database
-- Full ETL pipeline
-- 16 data quality rules
-- Zero unresolved CRITICAL validation failures
-- Zero foreign key violations
-- 54 passing unit tests
-- Load audit report
-- Validation failure report
-- Manual review of 5 companies
-- 10 exploratory SQL queries
+---
 
 ## Running the Project
 
-Create the database:
+### Create the Database
 
 ```bash
 python -m src.etl.create_db
 ```
 
-Load the data:
+### Load Data
 
 ```bash
 python -m src.etl.load_database
 ```
 
-Run validation:
+### Run Validation
 
 ```bash
 python -m src.etl.run_validation
 ```
 
-Run tests:
+### Populate Financial Ratios
+
+```bash
+python -m src.analytics.populate_ratios
+```
+
+### Generate Valuation Reports
+
+```bash
+python -m src.analytics.valuation
+```
+
+### Run Tests
 
 ```bash
 pytest -q
 ```
 
-## Current Status
+### Start the Dashboard
 
-**Sprint 1 — Data Foundation: Completed**
+```bash
+streamlit run src/dashboard/app.py 
+```
 
-The data foundation is ready for the next phase of the Nifty100 Financial Intelligence Platform.
+The dashboard will normally be available locally through Streamlit after the server starts.
+
+---
+
+## Current Project Status
+
+```text
+Sprint 1 — Data Foundation                    Completed
+Sprint 2 — Financial Ratio Engine             Completed
+Sprint 3 — Screener & Peer Comparison Engine  Completed
+Sprint 4 — Dashboard & Valuation              Completed
+```
+
+The platform now provides a complete workflow from financial-data ingestion and validation through financial analytics, peer comparison, valuation, screening, and interactive dashboard visualization.
