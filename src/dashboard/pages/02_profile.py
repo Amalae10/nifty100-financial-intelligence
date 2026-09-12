@@ -179,7 +179,7 @@ if not pl.empty:
         )
 
     # Revenue + Net Profit bar chart
-    st.subheader("Revenue & Net Profit - 10 Year Trend")
+    st.subheader("Revenue & Net Profit - Historical Trend")
 
     fig_bar=go.Figure()
 
