@@ -268,12 +268,33 @@ df = df.sort_values(["company_id", "year_num"])
 
 # 3-year FCF concern flag
 
-df["fcf_concern_flag"] = (
-    df.groupby("company_id")["free_cash_flow_cr"]
-      .transform(
-          lambda x: x.lt(0).rolling(3).sum().eq(3)
-      )
-)
+def fcf_concern(group):
+    group = group.sort_values("year_num")
+    flags = pd.Series(False, index=group.index)
+
+    for i in range(2, len(group)):
+        rows = group.iloc[i-2:i+1]
+
+        years = rows["year_num"].tolist()
+        fcfs = rows["free_cash_flow_cr"].tolist()
+
+        consecutive = (
+            years[1] == years[0] + 1
+            and years[2] == years[1] + 1
+        )
+
+        if consecutive and all(x < 0 for x in fcfs):
+            flags.loc[rows.index[-1]] = True
+
+    return flags
+
+
+df["fcf_concern_flag"] = False
+
+for _, idx in df.groupby("company_id").groups.items():
+    g = df.loc[idx]
+    df.loc[g.index, "fcf_concern_flag"] = fcf_concern(g)
+
 
 df["fcf_concern_flag"] = df["fcf_concern_flag"].map(
     {True: "FCF Concern", False: ""}
@@ -284,28 +305,30 @@ df["fcf_concern_flag"] = df["fcf_concern_flag"].map(
 df = df.sort_values(["company_id", "year_num"])
 
 def add_cagr(group, column, years):
-    values, flags = [], []
+    group = group.sort_values("year_num")
 
-    for i in range(len(group)):
-        if i < years:
-            values.append(None)
-            flags.append("INSUFFICIENT")
+    values = {}
+    flags = {}
+
+    for i, row in group.iterrows():
+        current_year = row["year_num"]
+
+        old = group[group["year_num"] == current_year - years]
+
+        if old.empty:
+            values[i] = None
+            flags[i] = "INSUFFICIENT"
             continue
 
-        start = group.iloc[i - years][column]
-        end = group.iloc[i][column]
-
-        if pd.isna(start) or pd.isna(end):
-            values.append(None)
-            flags.append("INSUFFICIENT")
-            continue
+        start = old.iloc[0][column]
+        end = row[column]
 
         value, flag = cagr(start, end, years)
-        values.append(value)
-        flags.append(flag)
 
-    return values, flags
+        values[i] = value
+        flags[i] = flag
 
+    return pd.Series(values), pd.Series(flags)
 
 # Create 3Y, 5Y and 10Y CAGR
 for source, name in [
@@ -330,7 +353,7 @@ for source, name in [
             df.loc[g.index, flag_col] = flags
 
 df["fcf_cagr_5yr"] = None
-df["fcf_cagr_5yr_flag"] = None
+df["fcf_cagr_5yr_flag"] = "INSUFFICIENT"
 
 for company_id, group in df.groupby("company_id"):
     group = group.sort_values("year_num")
@@ -365,9 +388,13 @@ for col in df.columns:
 
 df = add_composite_score(df)
 
+print("Total rows before save:", len(df))
+print("Composite populated:", df["composite_quality_score"].notna().sum())
+print("Composite missing:", df["composite_quality_score"].isna().sum())
+
 # save only required kpi columns
 
-result=df[[
+result = df[[
     "company_id",
     "year",
 

@@ -1,3 +1,5 @@
+# to proves ROE and 5-year Revenue CAGR calculations match manually.
+
 import sqlite3
 import pandas as pd
 
