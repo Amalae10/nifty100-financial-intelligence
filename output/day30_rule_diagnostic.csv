@@ -1,0 +1,38 @@
+company_id,pros,cons
+BHEL,NONE,"['C8', 'C10', 'C11', 'C12']"
+GODREJCP,NONE,['C4']
+JINDALSTEL,NONE,['C12']
+ABB,"['P1', 'P6', 'P7', 'P9', 'P10', 'P11']",NONE
+ADANIPORTS,"['P4', 'P5', 'P10']",NONE
+ADANIPOWER,"['P1', 'P2', 'P4', 'P5', 'P10']",NONE
+APOLLOHOSP,"['P2', 'P6', 'P8', 'P9', 'P11']",NONE
+ATGL,"['P4', 'P6', 'P7', 'P9', 'P11', 'P12']",NONE
+BEL,"['P1', 'P7', 'P10', 'P11']",NONE
+BOSCHLTD,"['P2', 'P7', 'P8', 'P10', 'P11', 'P12']",NONE
+BPCL,"['P6', 'P7', 'P9', 'P11']",NONE
+BRITANNIA,"['P1', 'P7', 'P11']",NONE
+DMART,"['P4', 'P6', 'P7', 'P9', 'P11']",NONE
+DRREDDY,"['P2', 'P5', 'P6', 'P7', 'P9', 'P10', 'P11']",NONE
+HAVELLS,"['P7', 'P8']",NONE
+HDFCLIFE,"['P4', 'P5', 'P7', 'P10']",NONE
+HINDALCO,"['P5', 'P7', 'P11']",NONE
+ICICIPRULI,"['P4', 'P5', 'P7', 'P12']",NONE
+IOC,"['P6', 'P7', 'P9', 'P11']",NONE
+ITC,"['P1', 'P2', 'P5', 'P7', 'P8', 'P11']",NONE
+JSWSTEEL,['P4'],NONE
+LICI,"['P1', 'P2', 'P3', 'P6', 'P7', 'P8', 'P11']",NONE
+M&M,"['P9', 'P11']",NONE
+MARUTI,"['P2', 'P7', 'P10', 'P11']",NONE
+MOTHERSON,"['P2', 'P8', 'P10']",NONE
+NESTLEIND,"['P1', 'P2', 'P7', 'P8', 'P9', 'P11']",NONE
+ONGC,"['P2', 'P7', 'P11']",NONE
+PIDILITIND,"['P7', 'P11', 'P12']",NONE
+PNB,"['P1', 'P4']",NONE
+POWERGRID,"['P2', 'P5', 'P8', 'P11', 'P12']",NONE
+SHREECEM,"['P7', 'P8', 'P11']",NONE
+SIEMENS,"['P7', 'P8', 'P9', 'P10', 'P11']",NONE
+SUNPHARMA,"['P5', 'P6', 'P7', 'P8', 'P9', 'P11', 'P12']",NONE
+TATAMOTORS,"['P8', 'P10', 'P12']",NONE
+TCS,"['P1', 'P2', 'P5', 'P7', 'P10']",NONE
+TORNTPHARM,"['P2', 'P5', 'P6', 'P9', 'P10', 'P11', 'P12']",NONE
+TRENT,"['P4', 'P6', 'P8', 'P9', 'P10', 'P11']",NONE

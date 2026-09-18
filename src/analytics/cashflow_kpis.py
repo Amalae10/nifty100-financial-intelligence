@@ -60,3 +60,13 @@ def allocation(cfo, cfi, cff, cfo_pat=None):
     }
 
     return signs, patterns.get(signs, "Mixed")
+
+def distress_signal(cfo, cff):
+    return cfo < 0 and cff > 0
+
+
+def deleveraging(cff, current_borrowings, previous_borrowings):
+    return (
+        cff < 0
+        and current_borrowings < previous_borrowings
+    )

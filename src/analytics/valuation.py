@@ -218,7 +218,9 @@ def build_valuation():
         "PE_vs_sector_median_pct",
         "flag"
     ]
+    
     output = output.fillna("N/A")
+
     output.to_excel(
         OUTPUT_DIR / "valuation_summary.xlsx",
         index=False

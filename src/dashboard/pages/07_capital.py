@@ -180,7 +180,6 @@ if clicked_points:
 
 selected_pattern = st.session_state.capital_pattern
 
-
 st.write(
     f"### Selected Pattern: {selected_pattern}"
 )
