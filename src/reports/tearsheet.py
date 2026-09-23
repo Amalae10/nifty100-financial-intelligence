@@ -1,6 +1,8 @@
 import sqlite3
 from pathlib import Path
 import pandas as pd
+import matplotlib.pyplot as plt
+from reportlab.platypus import Image
 
 from reportlab.graphics.shapes import Drawing, Rect, Line, String
 from reportlab.graphics.charts.barcharts import VerticalBarChart
@@ -615,6 +617,125 @@ def intelligence_section(ticker, styles):
 
     return table, badge
 
+def financial_history_table(ticker, styles):
+    with sqlite3.connect(DB) as conn:
+        df = pd.read_sql(
+            """
+            SELECT year,
+                   return_on_equity_pct,
+                   return_on_capital_pct,
+                   operating_profit_margin_pct,
+                   debt_to_equity,
+                   free_cash_flow_cr,
+                   revenue_cagr_5yr,
+                   pe_ratio,
+                   composite_quality_score
+            FROM financial_ratios
+            WHERE company_id = ?
+              AND year != 'TTM'
+            ORDER BY CAST(SUBSTR(year, -4) AS INTEGER)
+            """,
+            conn,
+            params=(ticker,),
+        )
+
+    if df.empty:
+        return Paragraph(
+            "Financial history not available.",
+            styles["BodyText"],
+        )
+
+    data = [[
+        "Year", "ROE %", "ROCE %", "OPM %",
+        "D/E", "FCF Cr", "Rev CAGR 5Y %",
+        "P/E", "Quality"
+    ]]
+
+    for _, row in df.tail(10).iterrows():
+        data.append([
+            str(row["year"]),
+            fmt(row["return_on_equity_pct"]),
+            fmt(row["return_on_capital_pct"]),
+            fmt(row["operating_profit_margin_pct"]),
+            fmt(row["debt_to_equity"]),
+            fmt(row["free_cash_flow_cr"]),
+            fmt(row["revenue_cagr_5yr"]),
+            fmt(row["pe_ratio"]),
+            fmt(row["composite_quality_score"]),
+        ])
+
+    table = Table(
+        data,
+        repeatRows=1,
+        colWidths=[
+            20 * mm, 18 * mm, 18 * mm,
+            18 * mm, 16 * mm, 20 * mm,
+            25 * mm, 18 * mm, 22 * mm
+        ],
+    )
+
+    table.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, 0), NAVY),
+        ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
+        ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+        ("FONTSIZE", (0, 0), (-1, -1), 7),
+        ("ALIGN", (1, 1), (-1, -1), "RIGHT"),
+        ("ALIGN", (0, 0), (-1, 0), "CENTER"),
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("GRID", (0, 0), (-1, -1), 0.4, colors.lightgrey),
+        ("ROWBACKGROUNDS", (0, 1), (-1, -1),
+         [colors.white, colors.whitesmoke]),
+        ("TOPPADDING", (0, 0), (-1, -1), 5),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+    ]))
+
+    return table
+
+def performance_png(ticker):
+    with sqlite3.connect(DB) as conn:
+        df = pd.read_sql(
+            """
+            SELECT year, sales, net_profit
+            FROM profitandloss
+            WHERE company_id = ?
+              AND year != 'TTM'
+            """,
+            conn,
+            params=(ticker,),
+        )
+
+    df["year_num"] = pd.to_numeric(
+        df["year"].str.extract(r"(20\d{2})")[0],
+        errors="coerce",
+    )
+
+    df = df.dropna(subset=["year_num"]).sort_values("year_num").tail(10)
+
+    if df.empty:
+        return None
+
+    chart_dir = OUT / "_charts"
+    chart_dir.mkdir(exist_ok=True)
+
+    path = chart_dir / f"{ticker}_performance.png"
+
+    fig, ax = plt.subplots(figsize=(9, 4.5), dpi=180)
+
+    ax.plot(df["year_num"], df["sales"], marker="o", label="Revenue")
+    ax.plot(df["year_num"], df["net_profit"], marker="o", label="Net Profit")
+
+    ax.set_title(f"{ticker} - Financial Performance")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Rs Crore")
+    ax.grid(alpha=0.25)
+    ax.legend()
+
+    fig.tight_layout()
+    fig.savefig(path, dpi=180)
+    plt.close(fig)
+
+    return path
+
 def build_tearsheet(ticker):
     company, r = get_company_data(ticker)
 
@@ -762,6 +883,52 @@ def build_tearsheet(ticker):
     story.append(Spacer(1, 2 * mm))
     story.append(allocation_badge)
 
+    # ================= PAGE 3 =================
+
+    story.append(PageBreak())
+
+    story.append(
+        Paragraph(
+            "<b>10-Year Financial & KPI History</b>",
+            styles["Heading2"],
+        )
+    )
+
+    story.append(Spacer(1, 3 * mm))
+    story.append(financial_history_table(ticker, styles))
+
+    story.append(Spacer(1, 5 * mm))
+
+    chart_path = performance_png(ticker)
+
+    if chart_path:
+        story.append(
+            Paragraph(
+                "<b>Financial Performance Trend</b>",
+                styles["Heading2"],
+            )
+        )
+
+        story.append(
+            Image(
+                str(chart_path),
+                width=180 * mm,
+                height=90 * mm,
+            )
+        )
+
+    story.append(Spacer(1, 5 * mm))
+
+    story.append(
+        Paragraph(
+            "<b>Data Note</b><br/>"
+            "Metrics are calculated from the financial information available "
+            "in the N100 Financial Intelligence database. Companies with shorter "
+            "listing histories may contain fewer historical periods.",
+            styles["BodyText"],
+        )
+    )
+
     # Build PDF
     doc.build(story)
 
@@ -769,7 +936,6 @@ def build_tearsheet(ticker):
 
 
 if __name__ == "__main__":
-
     skipped = []
 
     with sqlite3.connect(DB) as conn:
@@ -786,28 +952,14 @@ if __name__ == "__main__":
             conn,
         )
 
-    for _, row in companies.iterrows():
+        for _, row in companies.iterrows():
+            ticker = row["company_id"]
+            years = row["years"]
 
-        ticker = row["company_id"]
-        years = row["years"]
-
-        # Skip companies with less than 3 years
-        if years < 3:
-            print(f"Skipped: {ticker} ({years} years)")
-
-            skipped.append({
-                "company_id": ticker,
-                "years_available": years,
-                "reason": "Fewer than 3 years of data",
-            })
-
-            continue
-
-        try:
-            build_tearsheet(ticker)
-
-        except Exception as e:
-            print(f"ERROR: {ticker} - {e}")
+            try:
+                    build_tearsheet(ticker)
+            except Exception as e:
+                    print(f"ERROR: {ticker} - {e}")
 
     # Save genuine data skips
     pd.DataFrame(

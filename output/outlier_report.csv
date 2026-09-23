@@ -1,0 +1,9 @@
+company_id,broad_sector,metric,value,z_score
+INDIGO,Consumer Discretionary,return_on_equity_pct,892.568306010929,3.47
+PNB,Financials,return_on_equity_pct,61.320565191187306,3.25
+ICICIPRULI,Financials,return_on_capital_pct,753.9778779188856,3.22
+INDIGO,Consumer Discretionary,return_on_capital_pct,4953.540772532189,3.47
+BAJAJHLDNG,Financials,net_profit_margin_pct,432.7262044653349,4.5
+ADANIGREEN,Energy,debt_to_equity,6.595281675818589,3.14
+BAJAJHLDNG,Financials,interest_coverage,3764.5,3.59
+SBILIFE,Financials,cfo_pat_ratio,15.375923970432947,3.12

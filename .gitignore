@@ -6,3 +6,6 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Temporary tearsheet chart images
+reports/tearsheets/_charts/

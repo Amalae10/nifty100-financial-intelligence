@@ -91,12 +91,18 @@ def generate():
         icr = num(latest.get("interest_coverage"))
         fcf = num(latest.get("free_cash_flow_cr"))
         rev5 = num(latest.get("revenue_cagr_5yr"))
+        rev3 = num(latest.get("revenue_cagr_3yr"))
         pat5 = num(latest.get("pat_cagr_5yr"))
         eps5 = num(latest.get("eps_cagr_5yr"))
+        eps3 = num(latest.get("eps_cagr_3yr"))
         opm = num(latest.get("operating_profit_margin_pct"))
         div_yield = num(latest.get("dividend_yield_pct"))
         payout = num(latest.get("dividend_payout_ratio_pct"))
         net_debt_ebitda = num(latest.get("net_debt_to_ebitda"))
+        pe = num(latest.get("pe_ratio"))
+        pb = num(latest.get("pb_ratio"))
+        fcf_yield = num(latest.get("fcf_yield_pct"))
+        cfo_quality = str(latest.get("cfo_quality_score", ""))
 
         roe_hist = list(map(num, r["return_on_equity_pct"]))
         fcf_hist = list(map(num, r["free_cash_flow_cr"]))
@@ -200,7 +206,31 @@ def generate():
                 add(rows, company, "pro", "P12",
                     "Growing asset base funded by internal accruals reflects self-sustaining growth",
                     80)
+        # P13 Revenue CAGR > 10% over 3 years
+        if pd.notna(rev3) and rev3 > 10:
+            add(rows, company, "pro", "P13",
+                f"Revenue CAGR of {rev3:.1f}% over 3 years indicates positive recent business growth",
+                conf_above(rev3, 10, 2))
 
+        # P14 EPS CAGR > 15% over 3 years
+        if pd.notna(eps3) and eps3 > 15:
+            add(rows, company, "pro", "P14",
+                f"EPS CAGR of {eps3:.1f}% over 3 years indicates positive recent earnings growth",
+                conf_above(eps3, 15, 2))
+
+        # P15 Operating margin improved year-on-year
+        if len(opm_hist) >= 2:
+            prev_opm = opm_hist[-2]
+            curr_opm = opm_hist[-1]
+
+            if (
+                pd.notna(prev_opm)
+                and pd.notna(curr_opm)
+                and curr_opm > prev_opm
+            ):
+                add(rows, company, "pro", "P15",
+                    f"Operating margin improved from {prev_opm:.1f}% to {curr_opm:.1f}% in the latest year",
+                    75)
         # ---------------- CON RULES ----------------
 
         # C1 D/E > 2 non-financial
@@ -282,6 +312,56 @@ def generate():
             add(rows, company, "con", "C12",
                 "Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum",
                 conf_below(rev5, 5, 3))
+
+	        # C13 Low ROE
+        if pd.notna(roe) and roe < 15:
+            add(rows, company, "con", "C13",
+                f"Return on equity of {roe:.1f}% is below 15%, indicating room for improvement in shareholder capital efficiency",
+                conf_below(roe, 15, 2))
+
+        # C14 Moderate 5-year revenue growth
+        if pd.notna(rev5) and rev5 < 10:
+            add(rows, company, "con", "C14",
+                f"Five-year revenue CAGR of {rev5:.1f}% is below 10%, indicating relatively moderate long-term growth",
+                conf_below(rev5, 10, 2))
+
+        # C15 Limited KPI history
+        has_con = any(
+            x["company_id"] == company and x["type"] == "con"
+            for x in rows
+        )
+
+        if not has_con and (
+            pd.isna(roe) and pd.isna(roce)
+            and pd.isna(rev5) and pd.isna(fcf)
+        ):
+            add(rows, company, "con", "C15",
+                "Limited recent KPI history reduces confidence in a complete financial risk assessment",
+                70)
+
+	        # C16 High valuation multiple
+        if pd.notna(pe) and pe > 30:
+            add(rows, company, "con", "C16",
+                f"P/E ratio of {pe:.1f}x indicates a relatively high valuation multiple and may limit margin of safety",
+                conf_above(pe, 30, 1))
+
+        # C17 High price-to-book valuation
+        if pd.notna(pb) and pb > 8:
+            add(rows, company, "con", "C17",
+                f"Price-to-book ratio of {pb:.1f}x indicates a relatively high valuation versus reported book value",
+                conf_above(pb, 8, 2))
+
+        # C18 Negative FCF yield
+        if pd.notna(fcf_yield) and fcf_yield < 0:
+            add(rows, company, "con", "C18",
+                f"Negative free-cash-flow yield of {fcf_yield:.2f}% is a cash-flow watchpoint",
+                80)
+
+        # C19 Accrual risk
+        if cfo_quality == "Accrual Risk":
+            add(rows, company, "con", "C19",
+                "Cash-flow quality is classified as Accrual Risk, indicating earnings require closer cash-conversion review",
+                80)
 
     result = pd.DataFrame(rows)
     result.to_csv(OUT / "pros_cons_generated.csv", index=False)

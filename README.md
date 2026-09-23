@@ -543,6 +543,121 @@ streamlit run src/dashboard/app.py
 The dashboard will normally be available locally through Streamlit after the server starts.
 
 ---
+---
+
+## Sprint 5 — NLP, Cash-Flow Intelligence & Reports
+
+Sprint 5 added automated financial-text analysis, cash-flow intelligence, capital-allocation analysis, and company reports.
+
+### Key Deliverables
+
+- Annual-report text parsing
+- Automated Pros & Cons generation
+- Cash-flow intelligence
+- Capital-allocation classification
+- Company tear-sheet generation
+- Portfolio summary report
+
+### Sprint 5 Results
+
+```text
+Companies represented in Pros & Cons: 92/92
+Cash-flow intelligence rows: 92
+Distress signals identified: 13
+Capital-allocation companies: 91
+Company tear sheets generated: 91
+Portfolio summary pages: 92
+```
+## Sprint 6 — Clustering, FastAPI & Production QA
+
+Sprint 6 adds company clustering, REST API access, automated API testing, integration testing, and performance optimization.
+
+### Company Clustering
+
+K-Means clustering is performed using 5 financial features:
+
+- ROE
+- Debt-to-Equity
+- Revenue CAGR 5Y
+- FCF CAGR 5Y
+- Operating Profit Margin
+
+```text
+Companies clustered: 92
+Clusters: 5
+```
+
+Generated outputs:
+
+```text
+output/clustering_features.csv
+output/cluster_labels.csv
+output/cluster_profiles.csv
+output/outlier_report.csv
+output/portfolio_stats.csv
+reports/elbow_plot.png
+reports/correlation_heatmap.png
+```
+
+### FastAPI REST API
+
+The platform provides 16 REST API endpoints under:
+
+```text
+/api/v1
+```
+
+The API provides access to company financials, ratios, screening, sectors, peers, valuation, portfolio statistics, documents, and system health.
+
+Run the API:
+
+```bash
+uvicorn src.api.main:app --reload
+```
+
+Swagger documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+API documentation files:
+
+```text
+docs/openapi.json
+docs/postman_collection.json
+```
+
+### Testing
+
+Latest automated test result:
+
+```text
+Tests: 114
+Passed: 114
+Failed: 0
+```
+
+HTML report:
+
+```text
+reports/pytest_report.html
+```
+
+### Performance Testing
+
+```text
+Concurrent requests: 50
+Successful: 50/50
+Average latency: 0.1210 seconds
+Maximum latency: 0.1616 seconds
+```
+
+Database indexes were added to improve company/year queries on financial ratios, Profit & Loss, Balance Sheet, and Cash Flow tables.
+
+---
+
+---
 
 ## Current Project Status
 
@@ -551,6 +666,8 @@ Sprint 1 — Data Foundation                    Completed
 Sprint 2 — Financial Ratio Engine             Completed
 Sprint 3 — Screener & Peer Comparison Engine  Completed
 Sprint 4 — Dashboard & Valuation              Completed
+Sprint 5 — NLP & Financial Reports            Completed
+Sprint 6 — API, Clustering & Production QA    Completed
 ```
 
 The platform now provides a complete workflow from financial-data ingestion and validation through financial analytics, peer comparison, valuation, screening, and interactive dashboard visualization.

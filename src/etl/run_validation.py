@@ -360,14 +360,14 @@ for name, df in [
 # Save validation report
 # -------------------------
 
-report = pd.DataFrame(
-    failures,
-    columns=[
-        "rule_id",
-        "table",
-        "severity"
-    ]
-)
+report = pd.DataFrame(failures, columns=["rule_id", "table", "severity"])
+
+report = pd.DataFrame({
+    "company_id": "ALL",
+    "field": report["table"],
+    "issue": report["rule_id"],
+    "severity": report["severity"]
+})
 
 report.to_csv(
     "output/validation_failures.csv",

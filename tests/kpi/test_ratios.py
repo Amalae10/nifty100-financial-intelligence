@@ -72,3 +72,18 @@ def test_financial_leverage():
 
 def test_asset_turnover_zero():
     assert asset_turnover(100,0) is None
+
+def test_roa_normal():
+    from src.analytics.ratios import roa
+    assert roa(100, 1000) == 10
+
+
+def test_net_debt():
+    from src.analytics.ratios import net_debt
+    assert net_debt(500, 200) == 300
+
+
+def test_icr_warning():
+    from src.analytics.ratios import icr_warning
+    assert icr_warning(1.0) is True
+    assert icr_warning(2.0) is False
